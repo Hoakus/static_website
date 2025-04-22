@@ -1,5 +1,4 @@
 import unittest
-
 from textnode import TextNode, TextType
 
 
@@ -15,7 +14,7 @@ class TestTextNode(unittest.TestCase):
         self.assertNotEqual(node, node2)
 
     def test_url_is_none(self):
-        node = TextNode("This is normal text", TextType.NORMAL)
+        node = TextNode("This is normal text", TextType.TEXT)
         self.assertIsNone(node.url)
 
     def test_url_not_none(self):
